@@ -1,57 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZA Electronics</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f4f7, #d9e2ec);
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Navigation Buttons */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Products Section */
+        .products {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .product-box {
+            width: 220px;
+            padding: 10px;
+            font-size: 12px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-box img {
+            width: 200px;
+            height: 200px;
+        }
+
+        section {
+            margin: 40px auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer input[type="email"] {
+            padding: 8px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer input[type="submit"] {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <header><h1><b><center>Semintics project</center></b></h1></header>
-        <main>
+    <header>
+        <center>
+            <h1>ZA ELECTRONICS</h1>
+        </center>
+    </header>
+
+    <main>
         <nav>
             <ul>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#CONTACT US">CONTACT US</a></li>   
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-        <section id="hello">
-            <center><h2>SECTION 1</h2></center>
-            <p>This is first paragraph of section 1.</p>
-        </section>
-        <section id="bye">
-            <center><h2>SECTION 2</h2></center>
-            <p>This is first paragraph of section 2.</p>
-            </section>
-        </section>
-        <article>
-            <center><h2>Article</h2></center>
-            <p>This is a paragraph of article</p>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <section id="HOME"
-                <center><h2>HOME page</h2></center>
-                <p>This is first paragraph of section 1.</p>
-            </section>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            <section id="CONTACT US"
-                <center><h2>CONTACT US</h2></center>
-                <p>This is first paragraph of section 2.</p>
-            </section>
-            <footer>
-                <p>Copyright &copy; 2023</p>
-                <p>All rights reserved</p>
-                </footer>
+        <section id="products" class="products">
+            <h2>Products</h2>
+            <p>Welcome to our product page! Here you can find a variety of products we offer.</p>
+            <p>Click on the product name to view more details.</p>
 
-        </article>
-        </main>
- 
+            <fieldset class="product-box">
+                <img src="drill.png" alt="Drill Image">
+                <div>
+                    <h4>Product Name: Drill</h4>
+                    <p><strong>Description:</strong> A powerful drill for all your construction needs.</p>
+                    <p><strong>Price:</strong> $99.99</p>
+                    <p><strong>Category:</strong> Tools</p>
+                    <p><strong>Availability:</strong> In Stock</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="product-box">
+                <img src="saw.png" alt="Saw Image">
+                <div>
+                    <h4>Product Name: Saw</h4>
+                    <p><strong>Description:</strong> A versatile saw for cutting various materials.</p>
+                    <p><strong>Price:</strong> $49.99</p>
+                    <p><strong>Category:</strong> Tools</p>
+                    <p><strong>Availability:</strong> In Stock</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="product-box">
+                <img src="screwdriver.png" alt="Screwdriver Image">
+                <div>
+                    <h4>Product Name: Screwdriver</h4>
+                    <p><strong>Description:</strong> A handy screwdriver for all your fastening needs.</p>
+                    <p><strong>Price:</strong> $19.99</p>
+                    <p><strong>Category:</strong> Tools</p>
+                    <p><strong>Availability:</strong> In Stock</p>
+                </div>
+            </fieldset>
+
+            <fieldset class="product-box">
+                <img src="hammer.png" alt="Hammer Image">
+                <div>
+                    <h4>Product Name: Hammer</h4>
+                    <p><strong>Description:</strong> A durable hammer for all your construction tasks.</p>
+                    <p><strong>Price:</strong> $29.99</p>
+                    <p><strong>Category:</strong> Tools</p>
+                    <p><strong>Availability:</strong> In Stock</p>
+                </div>
+            </fieldset>
+        </section>
+
+        <section id="About">
+            <h2>About Us</h2>
+            <p>Welcome to ZA Electronics! We are dedicated to providing high-quality electronic products and
+                exceptional customer service. Our team is passionate about technology and strives to bring you the
+                latest innovations in the industry.</p>
+            <p>Founded in 2023, we have quickly established ourselves as a trusted name in the electronics market.
+                Our mission is to make technology accessible to everyone, and we are committed to offering
+                competitive prices and a wide range of products.</p>
+            <p>Thank you for choosing ZA Electronics!</p>
+            <p>Welcome to ElectroTools Hub, your one-stop destination for high-quality electrical tools and
+                accessories. Whether you're a professional electrician, a DIY enthusiast, or a contractor, we’re
+                here to power your projects with reliable tools at competitive prices.</p>
+            <p>At ElectroTools Hub, quality and customer satisfaction are at the core of everything we do. Browse
+                our wide inventory and let us help you get the job done right—every time.</p>
+        </section>
+
+        <section id="Contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+            <p>Email: <a href="mailto:szahidaftab@gmail.com">szahidaftab@gmail.com</a></p>
+            <p>Phone: 123-456-7890</p>
+            <p>Address: 123 Main Street, Cityville, State, ZIP</p>
+            <p>Follow us on social media:</p>
+            <p>Facebook: <a href="https://www.facebook.com/ZA-Electronics">ZA Electronics</a></p>
+            <p>Twitter: <a href="https://twitter.com/ZA_Electronics">@ZA_Electronics</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/ZA_Electronics">@ZA_Electronics</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <form>
+            <label for="email">Subscribe to our newsletter:</label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+            <p>&copy; 2023 ZA Electronics. All rights reserved.</p>
+        </form>
+    </footer>
 </body>
+
 </html>
