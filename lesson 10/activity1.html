@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1+p{
+            color: yellow;
+            font-size: 25px;
+        }
+        div > p {
+            color: green;
+        }
+        .glass::after{
+            content: ⭐;
+        }
+        .glass::before{
+            content: ⭐;
+        }
+        h1:hover {
+            color: red;
+            font-size: 50px;
+        }
+        p:hover{
+            color: red;
+            font-size: 30px;
+        }
+        input[type="text"]{
+            color: blue;
+            height:50px;
+            width: 300px;
+            font-size: 30px;
+        }
+        input[type="password"]{
+            color: blue;
+             height:50px;
+            width: 300px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>good morning</h1>
+    <p>good morning</p>
+    <div>
+    <h1>good morning</h1>
+    <p>good morning</p>
+    </div>
+    <h1 class="glass">good morning</h1>
+    <p>good morning</p>
+    <div>
+    <input type="text" placeholder="enter your name">
+    </div>
+    <input type="password" placeholder="enter your password">
+</body>
+</html>
